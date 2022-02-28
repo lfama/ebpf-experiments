@@ -100,6 +100,7 @@ int exit_dir(struct getdents64_exit *args) {
     memset(pid_, 0, sizeof(pid_));
     p = pid.lookup(&tid);
 
+    u32 k = 1;
 
     if(p){
        //bpf_trace_printk("Hooked Pid: %d\\n", p);
